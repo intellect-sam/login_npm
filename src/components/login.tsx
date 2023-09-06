@@ -2,7 +2,7 @@ import { FormEventHandler, useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import { AuthSDK } from '../services/AuthSDK';
 
-function LoginPage() {
+const LoginPage = () => {
   const [inputField, setInputField] = useState({
     username: '',
     password: '',
@@ -50,13 +50,13 @@ function LoginPage() {
               <Form.Group
                 controlId="formBasicEmail"
                 className="mb-3">
-                <Form.Label className="text-left">Email address</Form.Label>
+                <Form.Label className="text-left">Username</Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="Enter email"
+                  placeholder="Enter Username"
                   value={inputField.username}
                   onChange={handleChange}
-                  name="userName"
+                  name="username"
                   required
                 />
               </Form.Group>
@@ -93,6 +93,6 @@ function LoginPage() {
       )}
     </>
   );
-}
+};
 
 export default LoginPage;

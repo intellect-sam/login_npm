@@ -8,24 +8,24 @@ export interface LoginResponse {
 }
 
 export interface ISetAdmin {
-  surname: 'Awode ';
-  firstName: 'Tolulope ';
-  otherName: 'Reuben';
-  countryId: '254';
-  countryFlag: 'https://oneequity.blob.core.windows.net/assets/visuals/flags/kenya.svg';
-  status: 'MobileVerified';
-  email: 'delighttechnosoft@gmail.com';
-  phoneNumber: '757643274';
-  deviceHasChanged: false;
-  hasCreatedSecurityPin: true;
-  hasCreatedTransactionPin: true;
-  hasValidId: true;
-  hasSetBiometrics: false;
-  hasValidBvn: false;
-  hasProfilePicture: false;
-  hasWallet: true;
-  hasValidatedMail: true;
-  hasValidatedPhone: false;
-  hasVirtualAccount: true;
-  hasCompletedProfile: true;
+  surname: string;
+  firstName: string;
+  otherName: string;
+  countryId: string;
+  countryFlag: string;
+  status: string;
+  email: string;
+  phoneNumber: string;
+  deviceHasChanged: boolean;
+  hasCreatedSecurityPin: boolean;
+  hasCreatedTransactionPin: boolean;
+  hasValidId: boolean;
+  hasSetBiometrics: boolean;
+  hasValidBvn: boolean;
+  hasProfilePicture: boolean;
+  hasWallet: boolean;
+  hasValidatedMail: boolean;
+  hasValidatedPhone: boolean;
+  hasVirtualAccount: boolean;
+  hasCompletedProfile: boolean;
 }
